@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: russkijmir
- * Date: 04.06.15
- * Time: 21:32
- */
+error_reporting(E_ALL);
+define('DEBUG', true);
+
+function debug($param) {
+  if(DEBUG)
+    var_dump($param);
+    echo "<br><br>";
+}
